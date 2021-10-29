@@ -1,0 +1,30 @@
+{
+    "name": "mikha-dev/tinymce-mathjax",
+    "description": "Description...",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mikha",
+            "email": "mikha.dev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DcatAdminExt\\TinymceMathjax\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "DcatAdminExt\\TinymceMathjax\\TinymceMathjaxServiceProvider",
+        "laravel": {
+            "providers": [
+                "DcatAdminExt\\TinymceMathjax\\TinymceMathjaxServiceProvider"
+            ]
+        }
+    }
+}
